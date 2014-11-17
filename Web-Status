@@ -1,5 +1,6 @@
 #!/bin/sh
 
+
 TTT () {
 
 #	echo -n  `date +%Y.%m.%d`" "`date +%H:%M:%S`"   "

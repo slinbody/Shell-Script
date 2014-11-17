@@ -1,5 +1,5 @@
 #!/bin/sh
-
+#return http status code to know Server Status
 
 TTT () {
 

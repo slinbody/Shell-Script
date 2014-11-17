@@ -1,4 +1,8 @@
 #!/bin/sh
+#=============================================
+#AWS Start instance by aws cli
+#=============================================
+
 echo `date +%Y.%m.%d`" "`date +%H:%M:%S`
 /usr/local/bin/aws ec2 start-instances --instance-ids i-3686d661 #open instance
 #sleep 5

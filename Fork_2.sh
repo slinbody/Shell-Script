@@ -1,4 +1,4 @@
-#/bin/bash
+#/bin/sh
 
 function_to_fork()
 {
@@ -7,7 +7,7 @@ function_to_fork()
         echo $1" is end"
 }
 
-for i in {1..3}
+for i in `seq 1 3`
 do
         function_to_fork $i &
 done

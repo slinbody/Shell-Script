@@ -34,4 +34,4 @@ do
 	if [ $i -lt 8 ];then
 	sleep 5
 	fi
-done
+done 

@@ -13,4 +13,6 @@ do
     touch $name
     dd if=/dev/zero of=$name bs=512 count=200 > /dev/null
   done
+  sleep $(( $RANDOM % 5 ))
 done
+

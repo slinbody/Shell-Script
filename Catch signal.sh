@@ -11,3 +11,5 @@ done
 
 # kill -USR1 PID
 # it will echo time and increase i value
+# kill -l to know what signal can have
+# it depends on platform

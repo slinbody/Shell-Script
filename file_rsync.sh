@@ -18,3 +18,4 @@ rsync --delete -av \
       --include="lib/pyroute2/netlink/rtnl/ifinfmsg.py" \
       --exclude="*" \
     admin@$remote_host:$remote_dir $local_dir
+ 

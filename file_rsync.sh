@@ -19,3 +19,10 @@ rsync --delete -av \
       --exclude="*" \
     admin@$remote_host:$remote_dir $local_dir
  
+# 可以再搭配expect 解決要手動輸入密碼
+#!/usr/bin/expect -f
+set password yourpasswd
+spawn /tmp/file_rsync.sh
+expect "password: "
+send "$password\n"
+interact

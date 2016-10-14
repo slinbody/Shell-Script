@@ -3,7 +3,7 @@ export RSYNC_PASSWORD=admin
 remote_dir="/mnt/ext/opt/netmgr/api/"
 local_dir="/opt/168.95.1.1/api/"
 remote_host="168.95.1.1"
-rsync --delete -av \
+rsync --delete -av --checksum\
       --include="nvs_util/" \
       --include="nvs_util/*" \
       --include="nvs_util/*/" \

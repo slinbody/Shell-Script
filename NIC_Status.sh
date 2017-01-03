@@ -1,5 +1,5 @@
 #!/bin/bash
-IFS=$'\n'
+IFS=$'\n'  # default value of IFS is: space, tab and newline.
 x=($(ip link))
 unset IFS
 

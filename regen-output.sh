@@ -11,7 +11,7 @@
 # qvs0,eth5
 
 #IFS='\n'
-IFS=$(echo -e '\n') # this will much better
+IFS=$(echo -e '\n') # this will be much better
 qvs=''
 
 brctl_info()

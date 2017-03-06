@@ -10,7 +10,8 @@
 # qvs0,eth1
 # qvs0,eth5
 
-IFS='\n'
+#IFS='\n'
+IFS=$(echo -e '\n') # this will much better
 qvs=''
 
 brctl_info()

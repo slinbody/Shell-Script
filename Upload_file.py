@@ -5,6 +5,6 @@
 
 file_size()
 {
-acd_cli metadata $1 | sed -n '/size/p' | sed -n 's/\([^0-9]*\)\([0-9][0-9]*\),/\2/p'
+acd_cli metadata "$1" | sed -n '/size/p' | sed -n 's/\([^0-9]*\)\([0-9][0-9]*\),/\2/p'
 
 }

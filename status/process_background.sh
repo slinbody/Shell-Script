@@ -2,12 +2,12 @@
 
 f1()
 {
-  sleep 10
+  sleep $1
   echo "END f1"
 }
 
 #f1 2>/dev/null &
-f1 &
+f1 ${1:-10} &
 pid=$! 
 
 spin=(

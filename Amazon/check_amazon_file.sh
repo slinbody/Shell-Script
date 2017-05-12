@@ -3,6 +3,12 @@
 
 acd_cli sync
 
+if [ "$#" == 0 ] # no filename
+then
+    echo "NO Filename!!"
+    exit 0
+fi
+
 amazon_dir='/2017/'$1
 
 file=`acd_cli ls $amazon_dir | awk '{print $3}'`

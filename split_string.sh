@@ -12,7 +12,7 @@ done <<< "$TEST_NODE"
 
 # Method 2:
 TEST_NODE="11,22,33,44,55"
-arrNODE=(${TEST_NODE//,/ })  # the space is necessary
+arrNODE=(${TEST_NODE//,/ })  # the space is necessary, which replace ","
 
 for i in ${arrNODE[@]}
 do
